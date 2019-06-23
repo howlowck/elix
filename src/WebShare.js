@@ -62,8 +62,7 @@ class WebShare extends Button {
 
   get [symbols.template]() {
     return template.concat(super[symbols.template], template.html`
-      <slot name="buttonInner"></slot>
-      <slot name="fallback"></slot>
+      <slot></slot>
     `);
   }
 }
